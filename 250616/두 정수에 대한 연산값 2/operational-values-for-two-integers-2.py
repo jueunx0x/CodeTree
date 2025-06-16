@@ -2,9 +2,13 @@ a, b = map(int, input().split())
 
 # Please write your code here.
 def cal(a,b):
-    max_ = max(a,b)*2
-    min_ = min(a,b)+10
+    if max(a,b) == a :
+        a = a * 2
+        b = a + 10
+    else:
+        a = a + 10
+        b = b * 2
 
-    print(min(max_,min_),max(max_,min_),sep = " ")
+    print(a,b,sep = " ")
 
 cal(a,b)
