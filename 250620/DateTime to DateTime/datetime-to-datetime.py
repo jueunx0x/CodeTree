@@ -6,7 +6,7 @@ def time_check(a,b,c):
     day,hour,minute = 11,11,11
     total_min = 0
 
-    if a<= 11 and b <= 11 and c<11 :
+    if a<= 11 and b < 11  :
         return -1
     while True:
         if day == a and hour == b and minute == c:
