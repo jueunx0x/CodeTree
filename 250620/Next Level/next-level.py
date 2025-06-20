@@ -8,6 +8,6 @@ class User:
         self.lv = lv
 
 user1 = User()
-user2 = User("hello",28)
+user2 = User(user2_id,user2_level)
 print("user",user1.userId,"lv",user1.lv)
 print("user",user2.userId,"lv",user2.lv)
