@@ -9,7 +9,7 @@ class BombClear:
         self.color = color 
         self.sec = sec
 
-firstBomb = BombClear(unlock_code,wire_color,34)
+firstBomb = BombClear(unlock_code,wire_color,seconds)
 
 print("code :",firstBomb.code)
 print("color :",firstBomb.color)
