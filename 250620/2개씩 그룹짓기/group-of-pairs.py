@@ -5,10 +5,12 @@ nums = list(map(int, input().split()))
 a = max(nums)
 b = min(nums)
 
-nums.remove(b)
-nums.remove(a)
-c = min(nums)
-d = max(nums)
-if a+b < c+d :
-    print(c+d)
+if len(nums) > 2:
+    nums.remove(b)
+    nums.remove(a)
+    c = min(nums)
+    d = max(nums)
+    if a+b < c+d :
+        print(c+d)
+    else : print(a+b)
 else : print(a+b)
