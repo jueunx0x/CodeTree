@@ -12,7 +12,11 @@ def day_of_num(m,d):
     return total_day
 
 diff = 0
-weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun"]
 diff = day_of_num(m2,d2) - day_of_num(m1,d2)
-
-print(diff%7)
+check = 0
+check = diff//7
+diff = diff%7
+if diff >= weekdays.index(A):
+    check+=1
+print(check)
