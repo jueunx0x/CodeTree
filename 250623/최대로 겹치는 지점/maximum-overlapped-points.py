@@ -7,8 +7,11 @@ events = []
 for i in segments:
     start,end = i
     events.append((start,1))
-    events.append((end,0))
-events.sort()
+    events.append((end,-1))
+
+events.sort(key=lambda x: (x[0], -x[1]))
+
+
 current = 0
 max_overlap = 0
 
