@@ -6,7 +6,7 @@ block = [0]* n
 # Please write your code here.
 for i in commands:
     a,b = i 
-    for j in range(a,b+1):
+    for j in range(a-1,b):
         block[j]+=1
 
 print(max(block))
